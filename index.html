@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineStream - Streaming Film Terbaik</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="#" class="logo">🎬 CineStream</a>
+            <div class="welcome">Selamat Datang di CineStream</div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="section-header">
+            <h1 class="section-title">FILM TERBARU</h1>
+        </div>
+
+        <div class="movies-grid">
+            <!-- Movie 1: Hidden Face -->
+            <div class="movie-card" onclick="goToMovie('hidden-face')">
+                <div class="movie-poster">
+                    <img src="https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=400&h=600&fit=crop" alt="Hidden Face">
+                    <div class="movie-overlay"></div>
+                    <div class="movie-badges">
+                        <span class="badge badge-hd">HD</span>
+                    </div>
+                    <div class="rating">
+                        <span class="star">⭐</span>
+                        <span>6.1</span>
+                    </div>
+                </div>
+                <div class="movie-info">
+                    <h3 class="movie-title">Hidden Face</h3>
+                    <p class="movie-meta">Thriller, Mystery | 2024</p>
+                    <div class="movie-actions">
+                        <a href="#" class="btn-watch" onclick="watchMovie(event, 'hidden-face')">Tonton</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Movie 2: The Return -->
+            <div class="movie-card" onclick="goToMovie('the-return')">
+                <div class="movie-poster">
+                    <img src="https://images.unsplash.com/photo-1489599511985-4daf0c71ad72?w=400&h=600&fit=crop" alt="The Return">
+                    <div class="movie-overlay"></div>
+                    <div class="movie-badges">
+                        <span class="badge badge-sd">SD</span>
+                    </div>
+                    <div class="rating">
+                        <span class="star">⭐</span>
+                        <span>6.7</span>
+                    </div>
+                </div>
+                <div class="movie-info">
+                    <h3 class="movie-title">The Return: Life After ISIS</h3>
+                    <p class="movie-meta">Documentary, Drama | 2021</p>
+                    <div class="movie-actions">
+                        <a href="#" class="btn-watch" onclick="watchMovie(event, 'the-return')">Tonton</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Movie 3: The Salt Path -->
+            <div class="movie-card" onclick="goToMovie('salt-path')">
+                <div class="movie-poster">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=600&fit=crop" alt="The Salt Path">
+                    <div class="movie-overlay"></div>
+                    <div class="movie-badges">
+                        <span class="badge badge-sd">SD</span>
+                    </div>
+                    <div class="rating">
+                        <span class="star">⭐</span>
+                        <span>6.9</span>
+                    </div>
+                </div>
+                <div class="movie-info">
+                    <h3 class="movie-title">The Salt Path</h3>
+                    <p class="movie-meta">Drama, Adventure | 2023</p>
+                    <div class="movie-actions">
+                        <a href="#" class="btn-watch" onclick="watchMovie(event, 'salt-path')">Tonton</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Movie 4: Mongrels -->
+            <div class="movie-card" onclick="goToMovie('mongrels')">
+                <div class="movie-poster">
+                    <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=400&h=600&fit=crop" alt="Mongrels">
+                    <div class="movie-overlay"></div>
+                    <div class="movie-badges">
+                        <span class="badge badge-hd">HD</span>
+                    </div>
+                    <div class="rating">
+                        <span class="star">⭐</span>
+                        <span>7.6</span>
+                    </div>
+                </div>
+                <div class="movie-info">
+                    <h3 class="movie-title">Mongrels</h3>
+                    <p class="movie-meta">Comedy, Family | 2024</p>
+                    <div class="movie-actions">
+                        <a href="#" class="btn-watch" onclick="watchMovie(event, 'mongrels')">Tonton</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Movie 5: Bride Hard -->
+            <div class="movie-card" onclick="goToMovie('bride-hard')">
+                <div class="movie-poster">
+                    <img src="https://images.unsplash.com/photo-1522878129833-838a904a3def?w=400&h=600&fit=crop" alt="Bride Hard">
+                    <div class="movie-overlay"></div>
+                    <div class="movie-badges">
+                        <span class="badge badge-sd">SD</span>
+                    </div>
+                    <div class="rating">
+                        <span class="star">⭐</span>
+                        <span>4.3</span>
+                    </div>
+                </div>
+                <div class="movie-info">
+                    <h3 class="movie-title">Bride Hard</h3>
+                    <p class="movie-meta">Action, Comedy | 2025</p>
+                    <div class="movie-actions">
+                        <a href="#" class="btn-watch" onclick="watchMovie(event, 'bride-hard')">Tonton</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Movie 6: Hotel Pula -->
+            <div class="movie-card" onclick="goToMovie('hotel-pula')">
+                <div class="movie-poster">
+                    <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=400&h=600&fit=crop" alt="Hotel Pula">
+                    <div class="movie-overlay"></div>
+                    <div class="movie-badges">
+                        <span class="badge badge-hd">HD</span>
+                    </div>
+                    <div class="rating">
+                        <span class="star">⭐</span>
+                        <span>6.5</span>
+                    </div>
+                </div>
+                <div class="movie-info">
+                    <h3 class="movie-title">Hotel Pula</h3>
+                    <p class="movie-meta">Romance, Drama | 2023</p>
+                    <div class="movie-actions">
+                        <a href="#" class="btn-watch" onclick="watchMovie(event, 'hotel-pula')">Tonton</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Movie 7: The Bhootini -->
+            <div class="movie-card" onclick="goToMovie('bhootini')">
+                <div class="movie-poster">
+                    <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=600&fit=crop" alt="The Bhootini">
+                    <div class="movie-overlay"></div>
+                    <div class="movie-badges">
+                        <span class="badge badge-hd">HD</span>
+                    </div>
+                    <div class="rating">
+                        <span class="star">⭐</span>
+                        <span>5.6</span>
+                    </div>
+                </div>
+                <div class="movie-info">
+                    <h3 class="movie-title">The Bhootini</h3>
+                    <p class="movie-meta">Horror, Supernatural | 2025</p>
+                    <div class="movie-actions">
+                        <a href="#" class="btn-watch" onclick="watchMovie(event, 'bhootini')">Tonton</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Movie 8: Lilim -->
+            <div class="movie-card" onclick="goToMovie('lilim')">
+                <div class="movie-poster">
+                    <img src="https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=400&h=600&fit=crop" alt="Lilim">
+                    <div class="movie-overlay"></div>
+                    <div class="movie-badges">
+                        <span class="badge badge-hd">HD</span>
+                    </div>
+                    <div class="rating">
+                        <span class="star">⭐</span>
+                        <span>7.8</span>
+                    </div>
+                </div>
+                <div class="movie-info">
+                    <h3 class="movie-title">Lilim</h3>
+                    <p class="movie-meta">Drama, Thriller | 2025</p>
+                    <div class="movie-actions">
+                        <a href="#" class="btn-watch" onclick="watchMovie(event, 'lilim')">Tonton</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function goToMovie(movieId) {
+            // Simulasi navigasi ke halaman detail film
+            alert(`Navigating to movie: ${movieId}\n\nDalam implementasi nyata, ini akan mengarahkan ke:\n/movie/${movieId} atau /watch/${movieId}`);
+            
+            // Dalam implementasi nyata, gunakan:
+            // window.location.href = `/movie/${movieId}`;
+            // atau untuk SPA: history.pushState({}, '', `/movie/${movieId}`);
+        }
+
+        // Smooth hover effects
+        document.querySelectorAll('.movie-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-10px) scale(1.02)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+
+        function watchMovie(event, movieId) {
+            event.stopPropagation();
+            // Simulasi navigasi ke halaman streaming
+            alert(`Memulai streaming film: ${movieId}\n\nDalam implementasi nyata, ini akan mengarahkan ke:\n/watch/${movieId}`);
+            
+            // Dalam implementasi nyata, gunakan:
+            // window.location.href = `/watch/${movieId}`;
+        }
+
+        // Prevent event bubbling for watch buttons
+        document.querySelectorAll('.btn-watch').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                e.stopPropagation();
+            });
+        });
+    </script>
+</body>
+</html>
